@@ -7,6 +7,7 @@ import DelayAndRepeat from './pages/delay-and-repeat';
 import FromAndFromTo from './pages/from-and-from-to';
 import Ease from './pages/ease';
 import Stagger from './pages/stagger';
+import Timeline from './pages/timeline';
 
 import './index.css';
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: '/control',
     element: <Control />,
+  },
+  {
+    path: '/timeline',
+    element: <Timeline />,
   },
 ]);
 

@@ -5,13 +5,17 @@ import svg from '../assets/fred.svg';
 
 function SimpleTween() {
   useGSAP(() => {
-    gsap.to('.fred', {
-      x: 400,
-      y: 200,
-      rotate: 360,
-      scale: 3,
-      duration: 1,
-    });
+    gsap.fromTo(
+      '.fred',
+      { x: 0, y: 0, duration: 1, scale: 0.1 },
+      {
+        x: 400,
+        y: 0,
+        rotate: 360,
+        duration: 1,
+        scale: 0.1,
+      }
+    );
   }, []);
 
   return (
