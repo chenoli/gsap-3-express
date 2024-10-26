@@ -10,6 +10,7 @@ import Stagger from './pages/stagger';
 import Timeline from './pages/timeline';
 
 import './index.css';
+import Hover from './pages/hover';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: '/timeline',
     element: <Timeline />,
+  },
+  {
+    path: '/hover',
+    element: <Hover />,
   },
 ]);
 
